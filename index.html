@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bouquet By Her | Handmade Flowers</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, serif;
+            background-color: #F7F5EC;
+            color: #405747;
+        }
+
+        /* Navigation */
+        header {
+            background-color: #DCE7D7;
+            padding: 25px 8%;
+            text-align: center;
+        }
+
+        .logo {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto 15px;
+        }
+
+        header h1 {
+            font-size: 38px;
+            color: #526B57;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            margin-top: 10px;
+            color: #738B75;
+        }
+
+        nav {
+            background-color: #F7F5EC;
+            padding: 18px;
+            text-align: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #526B57;
+            margin: 0 18px;
+            font-size: 16px;
+        }
+
+        /* Hero section */
+        .hero {
+            background-color: #E8EEE3;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h2 {
+            font-size: 42px;
+            color: #526B57;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #738B75;
+            color: white;
+            padding: 14px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+        }
+
+        /* About section */
+        .about {
+            padding: 70px 10%;
+            text-align: center;
+        }
+
+        .about h2,
+        .products h2,
+        .contact h2 {
+            color: #526B57;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.9;
+            font-size: 17px;
+        }
+
+        /* Products */
+        .products {
+            padding: 70px 8%;
+            text-align: center;
+            background-color: #E9EFE5;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            margin-top: 35px;
+        }
+
+        .product-card {
+            background-color: #FFFDF7;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(64, 87, 71, 0.08);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .product-card h3 {
+            margin-top: 15px;
+            color: #526B57;
+        }
+
+        /* Contact */
+        .contact {
+            padding: 70px 20px;
+            text-align: center;
+        }
+
+        .contact p {
+            margin: 15px 0 25px;
+        }
+
+        footer {
+            background-color: #DCE7D7;
+            color: #526B57;
+            text-align: center;
+            padding: 22px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 28px;
+            }
+
+            nav a {
+                margin: 0 7px;
+                font-size: 14px;
+            }
+
+            .hero h2 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="../images\logo.jpg" alt="My Logo" class="logo">
+
+        <h1>Bouquet By Her</h1>
+        <p>Handmade with love, crafted with care.</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Collection</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="hero" id="home">
+        <h2>Flowers That Last Forever</h2>
+        <p>
+            Beautiful handmade pipe cleaner flowers
+            for your special moments.
+        </p>
+        <a href="#products" class="button">Explore Collection</a>
+    </section>
+
+    <section class="about" id="about">
+        <h2>Our Story</h2>
+        <p>
+            Welcome to Bouquet By Her!
+            Bouquet BY HER started with one simple thought —
+
+            What if a bouquet could stay as beautiful as the day you received it?
+
+            Real flowers fade in two days. The feeling they give shouldn't. So she started twisting, shaping and curling
+            every single petal by hand. No water. No wilting. No rush to enjoy it before it dies.
+
+            Every flower here is handmade from soft chenille. Every daisy, lily and lotus is bent slowly, every bead is
+            placed carefully, every bow is tied with love.
+
+            Because a bouquet is never just flowers.
+
+            It's a sorry.
+            It's a thank you.
+            It's a happy birthday.
+            It's a I was thinking of you.
+
+            And now, that feeling lasts forever.
+
+            Made slowly, by her, for you.
+        </p>
+    </section>
+
+    <section class="products" id="products">
+        <h2>Forever By Her</h2>
+        <p>Handcrafted blooms made specially for you.</p>
+
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="../images/flower1.jpg" alt="Flower 1">
+                <h3>Rs 179</h3>
+            </div>
+
+            <div class="product-card">
+                <img src="../images/flower2.jpg" alt="Flower 2">
+                <h3>Rs 299</h3>
+            </div>
+
+            <div class="product-card">
+                <img src="../images/flower3.jpg" alt="Flower 3">
+                <h3>Rs 159</h3>
+            </div>
+
+            <div class="product-card">
+                <img src="../images/flower4.jpg" alt="flower4">
+                <h3>Rs 199 </h3>
+            </div>
+
+            <div class="product-card">
+                <img src="../images/flower5.jpg" alt="Flower 5">
+                <h3>Rs 349</h3>
+            </div>
+
+            <div class="product-card">
+                <img src="../images/flower6.jpg" alt="Flower 6">
+                <h3>Rs 199 </h3>
+            </div>
+
+            <div class="product-card">
+                <img src="../images/flower7.jpg" alt="Flower 7">
+                <h3>Rs 189</h3>
+
+            </div>
+            <div class="product-card">
+                <img src="../images/flower8.jpeg" alt="flower8">
+                <h3>Rs 389</h3>
+            </div>
+
+            <div class="product-card">
+                <img src="../images/flower9.jpeg" alt="flower9">
+                <h3>Rs 399</h3>
+            </div>
+
+            <div class="product-card">
+                <img src="../images/flower10.jpeg" alt="flower10">
+                <h3>Rs 399</h3>
+            </div>
+
+            <div class="product-card">
+                <img src="../images/flower11.jpeg" alt="flower11">
+                <h3>Rs 449</h3>
+            </div>
+
+            <div class="product-card">
+                <img src="../images/flower12.jpeg" alt="flower12">
+                <h3>Rs 249</h3>
+            </div>
+
+            <div class="product-card">
+                <img src="../images/flower13.jpeg" alt="flower13">
+                <h3>Rs 249</h3>
+            </div>
+        </div </section>
+
+        <section class="contact" id="contact">
+            <h2>Get in Touch</h2>
+            <p>Want a beautiful handmade bouquet?</p>
+            <a href="https://wa.me/9995120425" class="button">
+                Contact Us on WhatsApp
+            </a>
+        </section>
+
+        <footer>
+            <p>© 2026 Bouquet By Her. Made with love.</p>
+        </footer>
+
+</body>
+
+</html>
